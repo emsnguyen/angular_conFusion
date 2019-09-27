@@ -1,3 +1,4 @@
+import { LeaderService } from './services/leader.service';
 import { PromotionService } from './services/promotion.service';
 import { DishService } from './services/dish.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -46,6 +47,7 @@ import { ContactComponent } from './contact/contact.component';
   providers: [
     DishService,
     PromotionService,
+    LeaderService,
   ],
   bootstrap: [AppComponent]
 })
