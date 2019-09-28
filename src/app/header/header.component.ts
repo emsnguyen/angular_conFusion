@@ -1,3 +1,5 @@
+import { LoginComponent } from './../login/login.component';
+import { MatDialog, MatDialogRef } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog:MatDialog) { }
 
   ngOnInit() {
+  }
+
+  openLoginForm() {
+    this.dialog.open(LoginComponent, {width: '500px', height:'400px'});
   }
 
 }
