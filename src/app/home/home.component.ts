@@ -1,7 +1,5 @@
 import { Leader } from './../shared/leader';
 import { LeaderService } from './../services/leader.service';
-import { DISHES } from './../shared/dishes';
-import { PROMOTIONS } from './../shared/promotions';
 import { PromotionService } from './../services/promotion.service';
 import { DishService } from './../services/dish.service';
 import { Promotion } from './../shared/promotion';
