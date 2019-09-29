@@ -37,6 +37,7 @@ export class DishdetailComponent implements OnInit {
   dishIds: string[];
   prev: string;
   next: string;
+  errMess:string;
   constructor(
     private fb:FormBuilder,
     private dishService: DishService,
@@ -99,7 +100,9 @@ export class DishdetailComponent implements OnInit {
       .pipe(
         switchMap((params: Params) => this.dishService.getDish(params["id"]))
       )
-      .subscribe(dish => {this.dish = dish; this.setPrevNext(dish.id);});
+      .subscribe(dish => {this.dish = dish; this.setPrevNext(dish.id);},
+      errMess => this.errMess = errMess
+      );
   }
 
   setPrevNext(dishId:string) {
