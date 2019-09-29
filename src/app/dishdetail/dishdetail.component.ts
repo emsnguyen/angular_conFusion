@@ -38,6 +38,7 @@ export class DishdetailComponent implements OnInit {
   prev: string;
   next: string;
   errMess:string;
+  dishCopy:Dish;
   constructor(
     private fb:FormBuilder,
     private dishService: DishService,
@@ -70,7 +71,16 @@ export class DishdetailComponent implements OnInit {
     const year = date.getFullYear();
     const day = date.getDate();
     this.comment.date = month + ' ' + day +',' + year;
-    this.dish.comments.push(this.comment);
+    this.dishCopy.comments.push(this.comment);
+    this.dishService.putDish(this.dishCopy)
+    .subscribe(dish=> {
+      this.dish = dish;
+      this.dishCopy = dish;
+    }, errMsg =>{
+      this.dish = null;
+      this.dishCopy = null;
+      this.errMess = errMsg;
+    });
     this.commentFormDirective.reset();
 
   }
@@ -100,7 +110,7 @@ export class DishdetailComponent implements OnInit {
       .pipe(
         switchMap((params: Params) => this.dishService.getDish(params["id"]))
       )
-      .subscribe(dish => {this.dish = dish; this.setPrevNext(dish.id);},
+      .subscribe(dish => {this.dish = dish; this.dishCopy=dish; this.setPrevNext(dish.id);},
       errMess => this.errMess = errMess
       );
   }
