@@ -18,7 +18,7 @@ export class AboutComponent implements OnInit {
   errMsg: string;
   constructor(
     private leaderService: LeaderService,
-    @Inject("BaseURL") private BaseURL
+    @Inject("BaseURL") public BaseURL
   ) {}
 
   ngOnInit() {
