@@ -35,11 +35,11 @@
   </div>
   <div fxFlex fxFlexOffset="20px" class="form-size">
     <h3>Send us your feedback</h3>
-    <p>{{feedbackForm.value |json}} {{feedbackForm.status}}</p>
-    <form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+    <p *ngIf="feedbackForm.valid && !feedback">{{feedbackForm.value |json}} {{feedbackForm.status}}</p>
+    <form *ngIf="!feedback" novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" [@expand]>
       <p>
         <mat-form-field class="half-width">
-          <input matInput formControlName="firstname" placeholder="First Name" type="text" required/>
+          <input matInput formControlName="firstname" placeholder="First Name" type="text" required />
           <mat-error *ngIf="formErrors.firstname">
             {{formErrors.firstname}}
           </mat-error>
@@ -53,13 +53,14 @@
       </p>
       <p>
         <mat-form-field class="half-width">
-          <input matInput formControlName="telnum" placeholder="Telephone Number" type="text" required pattern="[0-9]*"/>
+          <input matInput formControlName="telnum" placeholder="Telephone Number" type="text" required
+            pattern="[0-9]*" />
           <mat-error *ngIf="formErrors.telnum">
             {{formErrors.telnum}}
           </mat-error>
         </mat-form-field>
         <mat-form-field class="half-width">
-          <input matInput formControlName="email" placeholder="Email" type="text" required email/>
+          <input matInput formControlName="email" placeholder="Email" type="text" required email />
           <mat-error *ngIf="formErrors.email">
             {{formErrors.email}}
           </mat-error>
@@ -81,11 +82,24 @@
         <mat-form-field class="full-width">
           <textarea matInput formControlName="message" placeholder="Your feedback" rows="12"></textarea>
           <mat-error *ngIf="formErrors.message">
-              {{formErrors.message}}
-            </mat-error>
+            {{formErrors.message}}
+          </mat-error>
         </mat-form-field>
       </p>
       <button type="submit" mat-button class="background-primary text-floral-white">Submit</button>
     </form>
+  </div>
+  <div fxFlex *ngIf="isSubmitting">
+    <h3>Submitting Form</h3>
+    <mat-spinner></mat-spinner>
+  </div>
+  <div fxFlex *ngIf="feedback" [@expand]>
+    <p>First name: {{feedback.firstname}}</p>
+    <p>Last name: {{feedback.lastname}}</p>
+    <p>Tel. Number: {{feedback.telnum}} </p>
+    <p>Email: {{feedback.email}} </p>
+    <p>Contact you?: {{feedback.agree}} </p>
+    <p>How?: {{feedback.contacttype}} </p>
+    <p>Feedback: {{feedback.feedback}} </p>
   </div>
 </div>
