@@ -1,9 +1,12 @@
 This app uses json-server module as a simple server to provide data.
-To run server, type json-server --watch db.json (database file)
+To install json-server in command line: `npm install -g json-server`
+To run server, open command line in json-server folder. Type: `json-server --watch db.json` (database file)
 
 # ConFusion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
+
+First, install Angular CLI with command line: `npm install -g @angular/cli`
 
 ## Development server
 
