@@ -26,7 +26,7 @@ export class DishdetailComponent implements OnInit {
   commentForm: FormGroup;
   comment: Comment;
   visibility = "shown";
-  @ViewChild("fform", { static: false }) commentFormDirective;
+  @ViewChild("commentForm", { static: false }) commentFormDirective;
   formErrors = {
     author: "",
     comment: ""

@@ -18,6 +18,7 @@ exports.config = {
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
+  args: ["--headless", "--disable-gpu", "--window-size=1920,1080"] ,
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
