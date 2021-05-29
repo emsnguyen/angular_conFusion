@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-29T14:36:27.810Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="M-vJYMhIOZeN0og6SbPU" version="14.6.11" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-29T16:03:23.140Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="uNvGhNJ_5sYOf4qQDUaY" version="14.6.11" type="github">
   <diagram id="7iMw0hYmV0MJd6Qoye5y" name="Page-1">
     <mxGraphModel dx="788" dy="1681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -97,11 +97,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0C-DFv6Ld-CoctSqXfZt-25" value="PHP LAMP&lt;br&gt;Flutter&lt;br&gt;IOS&lt;br&gt;Android&lt;br&gt;Javascript&lt;br&gt;Node&lt;br&gt;MEAN&lt;br&gt;Python&lt;br&gt;Ruby&lt;br&gt;Golang&lt;br&gt;Java&lt;br&gt;.Net&lt;br&gt;C++&lt;br&gt;Unity&lt;br&gt;Fullstack&lt;br&gt;Data Analyst&lt;br&gt;Machine Learning&lt;br&gt;Automation Testing&amp;nbsp;&lt;br&gt;AI Scientist&lt;br&gt;QA&lt;br&gt;BA&lt;br&gt;Product Owner&lt;br&gt;UX /UI Design&lt;br&gt;PM&amp;nbsp;&lt;br&gt;Angular" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="460" y="-200" width="120" height="360" as="geometry" />
+        <mxCell id="0C-DFv6Ld-CoctSqXfZt-25" value="&lt;br&gt;PHP LAMP&lt;br&gt;Flutter&lt;br&gt;IOS&lt;br&gt;Android&lt;br&gt;Javascript&lt;br&gt;Node&lt;br&gt;MEAN&lt;br&gt;Python&lt;br&gt;Ruby&lt;br&gt;Golang&lt;br&gt;Java&lt;br&gt;.Net&lt;br&gt;C++&lt;br&gt;Unity&lt;br&gt;Fullstack&lt;br&gt;Data Analyst&lt;br&gt;Machine Learning&lt;br&gt;Automation Testing&amp;nbsp;&lt;br&gt;AI Scientist&lt;br&gt;QA&lt;br&gt;BA&lt;br&gt;Product Owner&lt;br&gt;UX /UI Design&lt;br&gt;PM&amp;nbsp;&lt;br&gt;Angular" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="-525" width="120" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="0C-DFv6Ld-CoctSqXfZt-26" value="Nhu cầu về dev bla bla&lt;br&gt;Resource dev còn hay không?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="600" y="-160" width="180" height="30" as="geometry" />
+        <mxCell id="0C-DFv6Ld-CoctSqXfZt-26" value="Nhu cầu về dev bla bla&lt;br&gt;Resource dev còn hay không?&lt;br&gt;&lt;div&gt;&lt;span&gt;Khách hàng không biết chính xác mình muốn gì?&lt;br&gt;Bên họ yêu cầu IOS nhưng mình đang thiếu IOS? How about Flutter&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="-480" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0C-DFv6Ld-CoctSqXfZt-27" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Hệ thống lại ngôn ngữ và Framework liên quan&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="409" y="-410" width="270" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
